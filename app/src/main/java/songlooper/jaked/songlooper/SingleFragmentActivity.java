@@ -6,7 +6,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 
 /**
- * Created by jaked on 26/02/2018.
+ * Created by   jaked on 26/02/2018.
  */
 
 public abstract class SingleFragmentActivity extends AppCompatActivity {
@@ -18,7 +18,7 @@ public abstract class SingleFragmentActivity extends AppCompatActivity {
         setContentView(R.layout.activity_fragment);
 
         FragmentManager fm = getSupportFragmentManager();
-        // Gets the framelayout, where the fragments will be hosted
+        // Gets the frameLayout, where the fragments will be hosted
         Fragment fragment = fm.findFragmentById(R.id.fragment_container);
 
         // If a fragment wasn't already loaded
@@ -26,7 +26,7 @@ public abstract class SingleFragmentActivity extends AppCompatActivity {
         if (fragment == null ){
 
             fragment = createFragment();
-            //adds the ExerciseFragment (Where exercise deatils are entered) to the framelayout
+            //adds the ExerciseFragment (Where exercise details are entered) to the frameLayout
             fm.beginTransaction().add(R.id.fragment_container, fragment).commit();
         }
     }

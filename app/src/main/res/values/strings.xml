@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SongLooper</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="plays">Plays</string>
+    <string name="highscores">Your High Scores</string>
 </resources>
